@@ -19,43 +19,31 @@ A computer vision-based hand tracking application that controls mouse movement, 
 * Python 3.11+
 * Webcam
 
-## Dependencies
+## Quick Start
 
-This project uses:
+Open Command Prompt in the project folder and run:
 
-- cvzone
-- mediapipe
-- opencv-contrib-python
-- PyAutoGUI
-- screeninfo
-
-## Installation
-
-### Create Virtual Environment
-
-```bash
-python -m venv venv
+```cmd
+setup.bat
 ```
 
-### Activate Virtual Environment
+The setup script will:
 
-Windows:
+* Create a virtual environment
+* Install required dependencies
+* Prepare the application for use
 
-```bash
-venv\Scripts\activate
+After setup is complete, run:
+
+```cmd
+run.bat
 ```
 
-### Install Dependencies
+## Documentation
 
-```bash
-pip install -r requirements.txt
-```
+For detailed setup instructions and gesture controls, see:
 
-### Run Application
-
-```bash
-python hand_trackv6.py
-```
+* GUIDE.md
 
 ## Notes
 
