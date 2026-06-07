@@ -7,10 +7,12 @@ A computer vision-based hand tracking application that controls mouse movement, 
 * Hand tracking using webcam
 * Mouse movement control
 * Left click gesture
-* Right click gesture
+* Right click gesture (2-second hold)
 * Drag and drop gesture
+* Start PowerPoint slideshow (F5)
 * PowerPoint next slide
 * PowerPoint previous slide
+* Close active window (Alt + F4)
 * Multi-monitor support
 
 ## Requirements
