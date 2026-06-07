@@ -1,242 +1,168 @@
-# HandMotion Mouse - Complete User Guide
+# HandMotion Mouse Guide
 
 ## Overview
 
 HandMotion Mouse is a computer vision-based application that allows you to control your mouse cursor and PowerPoint presentations using hand gestures and a webcam.
 
-Supported features:
+### Features
 
-* Mouse movement
-* Left click
-* Right click
-* Drag and drop
-* PowerPoint next slide
-* PowerPoint previous slide
+* Mouse movement control
+* Left click gesture
+* Right click gesture
+* Drag and drop gesture
+* Start PowerPoint slideshow
+* Next PowerPoint slide
+* Previous PowerPoint slide
+* Close active window
 * Multi-monitor support
 
----
+### Requirements
 
-# First Time Setup
+* Windows 10 / Windows 11
+* Python 3.11+
+* Webcam
 
-## 1. Download the Project
+## Quick Start
 
-Download or clone the repository:
+### First Time Setup
 
-```bash
-git clone https://github.com/recklesscode-y/handmotion-mouse.git
-```
-
-Move into the project folder:
-
-```bash
-cd handmotion-mouse
-```
-
----
-
-## 2. Create Virtual Environment
-
-Create a dedicated Python environment for this project:
-
-```bash
-python -m venv handmotion_mouse
-```
-
-This creates:
+Run:
 
 ```text
-handmotion-mouse
-├── hand_trackv6.py
-├── README.md
-├── GUIDE.md
-├── requirements.txt
-└── handmotion_mouse
-    ├── Scripts
-    ├── Lib
-    └── ...
+setup.bat
 ```
 
----
+This will automatically:
 
-## 3. Activate Virtual Environment
+* Create a virtual environment
+* Install required packages
+* Prepare the application
 
-Windows:
+### Start Application
 
-```bash
-handmotion_mouse\Scripts\activate
-```
-
-You should see:
+Run:
 
 ```text
-(handmotion_mouse)
-```
-
-at the beginning of your command prompt.
-
-Example:
-
-```text
-(handmotion_mouse) C:\Projects\handmotion-mouse>
+run.bat
 ```
 
 ---
 
-## 4. Install Dependencies
+## Camera Selection
 
-Install all required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
-This will automatically install:
-
-* cvzone
-* mediapipe
-* opencv-contrib-python
-* PyAutoGUI
-* screeninfo
-
-and their required dependencies.
+When the application starts, select the webcam you want to use.
 
 ---
 
-## 5. Run the Application
+## Gesture Controls
 
-Start HandMotion Mouse:
+### Move Cursor
 
-```bash
-python hand_trackv6.py
-```
-
----
-
-# Camera Selection
-
-When the application starts, a camera selection window will appear.
-
-Example:
-
-```text
-Choose Camera
-
-Camera 0
-Camera 1
-Camera 2
-```
-
-Select the webcam you want to use.
-
-The application will then start hand tracking.
-
----
-
-# Gesture Guide
-
-## Cursor Movement
-
-### Gesture
+Gesture:
 
 * Index finger up
-* All other fingers down
+* Other fingers down
 
-### Action
+Action:
 
-Moves the mouse cursor.
-
----
-
-## Left Click
-
-### Gesture
-
-Touch your thumb and index finger together briefly.
-
-### Action
-
-Performs a left mouse click.
+* Move mouse cursor
 
 ---
 
-## Right Click
+### Left Click
 
-### Gesture
+Gesture:
 
-Touch your thumb and pinky finger together.
+* Touch thumb and index finger briefly
 
-### Action
+Action:
 
-Performs a right mouse click.
-
----
-
-## Drag and Drop
-
-### Gesture
-
-Touch your thumb and index finger together and hold for approximately 2 seconds.
-
-### Action
-
-Enters drag mode.
-
-While holding:
-
-* Move your hand to drag files, windows, folders, or objects.
-
-Release your fingers to drop the item.
+* Left click
 
 ---
 
-## PowerPoint Presentation Mode
+### Right Click
 
-### Gesture
+Gesture:
 
-Show a peace sign:
+* Touch thumb and pinky finger
+* Hold for approximately 2 seconds
 
-* Index finger up
-* Middle finger up
-* Ring finger down
-* Pinky down
+Action:
+
+* Right click
+
+---
+
+### Drag and Drop
+
+Gesture:
+
+* Touch thumb and index finger
+* Hold for approximately 2 seconds
+
+Action:
+
+* Drag mode
+
+Release fingers to drop.
+
+---
+
+### Start PowerPoint Slideshow
+
+Gesture:
+
+* Open palm
+* Hold for approximately 2 seconds
+
+Action:
+
+* Press F5
+* Start slideshow
 
 ---
 
 ### Next Slide
 
-While showing the peace sign:
+Gesture:
 
-Point your fingers to the right.
+* Peace sign
+* Point right
 
-### Action
+Action:
 
-Moves to the next PowerPoint slide.
+* Next slide
 
 ---
 
 ### Previous Slide
 
-While showing the peace sign:
+Gesture:
 
-Point your fingers to the left.
+* Peace sign
+* Point left
 
-### Action
+Action:
 
-Moves to the previous PowerPoint slide.
-
----
-
-# Tracking Area Calibration
-
-A yellow rectangle appears on screen.
-
-This rectangle defines the active tracking area.
-
-You can adjust it while the application is running.
+* Previous slide
 
 ---
 
-## Keyboard Controls
+### Close Active Window
+
+Gesture:
+
+* Closed fist
+* Hold for approximately 2 seconds
+
+Action:
+
+* Alt + F4
+
+---
+
+## Calibration Controls
 
 | Key | Function                   |
 | --- | -------------------------- |
@@ -246,108 +172,44 @@ You can adjust it while the application is running.
 | D   | Increase left/right margin |
 | Q   | Reduce bottom boundary     |
 | E   | Increase bottom boundary   |
-
-Use these controls to improve cursor accuracy based on your webcam position.
-
----
-
-# Multi-Monitor Support
-
-HandMotion Mouse automatically detects multiple monitors.
-
-The cursor can move across the entire desktop space, including:
-
-* Single monitor setups
-* Dual monitor setups
-* Multi-monitor setups
-
-No additional configuration is required.
+| ESC | Exit application           |
+| X   | Exit application           |
 
 ---
 
-# Recommended Setup
+## Tips
 
-For best results:
-
-* Use good room lighting
-* Keep your hand inside the yellow tracking rectangle
+* Use good lighting
+* Keep your hand inside the yellow tracking box
 * Position the webcam above or below the monitor
-* Avoid extremely dark backgrounds
-* Keep the webcam stable
+* Supports multiple monitors
 
 ---
 
-# Exit Application
+## Troubleshooting
 
-To close HandMotion Mouse:
+### Setup Issues
 
-Press:
+Run:
 
 ```text
-ESC
+setup.bat
 ```
 
-or
+again.
+
+### Camera Issues
+
+* Check webcam connection
+* Close other applications using the camera
+* Select the correct camera when starting
+
+### Missing Packages
+
+Run:
 
 ```text
-X
+setup.bat
 ```
 
----
-
-# Tested Environment
-
-* Windows 11
-* Python 3.11
-* USB Webcam
-* Single Monitor
-* Dual Monitor
-* Multi-Monitor
-
----
-
-# Troubleshooting
-
-## Camera Not Found
-
-Check:
-
-* Webcam is connected
-* Webcam is not being used by another application
-* Correct camera is selected
-
----
-
-## Cursor Not Moving
-
-Check:
-
-* Your hand is inside the tracking rectangle
-* Webcam has sufficient lighting
-* Index finger is clearly visible
-
----
-
-## PowerPoint Gestures Not Working
-
-Check:
-
-* PowerPoint presentation is active
-* Peace sign gesture is clearly detected
-* Your hand remains inside the tracking area
-
----
-
-## Missing Python Packages
-
-Activate the virtual environment:
-
-```bash
-handmotion_mouse\Scripts\activate
-```
-
-Then reinstall packages:
-
-```bash
-pip install -r requirements.txt
-```
+again to reinstall dependencies.
