@@ -84,9 +84,10 @@ detector = HandDetector(
 
 pyautogui.FAILSAFE = False
 
-FRAME_MARGIN_LEFT_RIGHT = 40
-FRAME_MARGIN_TOP = 30
-FRAME_MARGIN_BOTTOM = 20
+FRAME_MARGIN_LEFT_RIGHT = 65
+FRAME_MARGIN_TOP = 35
+FRAME_MARGIN_BOTTOM = 191
+BORDER_COLOR = (255, 255, 0)  # default border color
 PREVIEW_SCALE = 1.5
 
 CLICK_HOLD_FRAMES = 8
@@ -153,7 +154,7 @@ while True:
         img,
         (FRAME_MARGIN_LEFT_RIGHT, FRAME_MARGIN_TOP),
         (w - FRAME_MARGIN_LEFT_RIGHT, h - FRAME_MARGIN_BOTTOM),
-        (255, 255, 0),
+        BORDER_COLOR,
         2
     )
 
@@ -163,7 +164,7 @@ while True:
         (FRAME_MARGIN_LEFT_RIGHT, FRAME_MARGIN_TOP - 10),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.5,
-        (255, 255, 0),
+        BORDER_COLOR,
         1
     )
 
@@ -173,7 +174,7 @@ while True:
         (w - FRAME_MARGIN_LEFT_RIGHT - 90, FRAME_MARGIN_TOP - 10),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.5,
-        (255, 255, 0),
+        BORDER_COLOR,
         1
     )
 
@@ -183,7 +184,7 @@ while True:
         (FRAME_MARGIN_LEFT_RIGHT, h - FRAME_MARGIN_BOTTOM + 25),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.5,
-        (255, 255, 0),
+        BORDER_COLOR,
         1
     )
 
@@ -193,7 +194,7 @@ while True:
         (w - FRAME_MARGIN_LEFT_RIGHT - 120, h - FRAME_MARGIN_BOTTOM + 25),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.5,
-        (255, 255, 0),
+        BORDER_COLOR,
         1
     )
 
