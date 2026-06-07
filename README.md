@@ -52,3 +52,8 @@ For detailed setup instructions and gesture controls, see:
 * Tested on Windows 11
 * Requires a webcam
 * Supports multi-monitor environments
+
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
