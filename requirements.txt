@@ -1,0 +1,5 @@
+cvzone==1.6.1
+mediapipe==0.10.14
+opencv-contrib-python==4.13.0.92
+PyAutoGUI==0.9.54
+screeninfo==0.8.1
